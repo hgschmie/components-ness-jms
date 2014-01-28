@@ -18,10 +18,6 @@ package com.nesscomputing.jms;
 import javax.jms.JMSException;
 import javax.jms.Message;
 
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
-
 import com.google.common.collect.ImmutableMap;
 import com.google.inject.Guice;
 import com.google.inject.Inject;
@@ -31,6 +27,10 @@ import com.google.inject.name.Named;
 
 import com.nesscomputing.config.Config;
 import com.nesscomputing.config.ConfigModule;
+
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
 
 public class TestUnknownCaller
 {

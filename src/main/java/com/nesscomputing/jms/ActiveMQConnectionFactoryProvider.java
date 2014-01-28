@@ -25,9 +25,6 @@ import java.util.Set;
 import javax.annotation.Nonnull;
 import javax.jms.ConnectionFactory;
 
-import org.apache.activemq.ActiveMQConnectionFactory;
-import org.apache.commons.lang3.StringUtils;
-
 import com.google.common.base.Preconditions;
 import com.google.common.collect.Sets;
 import com.google.inject.Binding;
@@ -37,6 +34,9 @@ import com.google.inject.Key;
 import com.google.inject.Provider;
 import com.google.inject.ProvisionException;
 import com.google.inject.TypeLiteral;
+
+import org.apache.activemq.ActiveMQConnectionFactory;
+import org.apache.commons.lang3.StringUtils;
 
 /**
  * Provides a Connection factory to retrieve JMS connections from ActiveMQ.

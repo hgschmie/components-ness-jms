@@ -17,10 +17,10 @@ package com.nesscomputing.jms;
 
 import com.google.common.collect.ImmutableMap;
 
+import com.nesscomputing.config.Config;
+
 import org.junit.Assert;
 import org.junit.Test;
-
-import com.nesscomputing.config.Config;
 
 public class TestJmsConfig
 {

@@ -27,12 +27,12 @@ import com.google.inject.Injector;
 import com.google.inject.Stage;
 import com.google.inject.name.Named;
 
+import com.nesscomputing.config.Config;
+import com.nesscomputing.config.ConfigModule;
+
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-
-import com.nesscomputing.config.Config;
-import com.nesscomputing.config.ConfigModule;
 
 public class TestStrangeStuff
 {

@@ -15,14 +15,14 @@
  */
 package com.nesscomputing.jms;
 
-import com.nesscomputing.logging.Log;
-
 import java.io.IOException;
 
 import javax.annotation.Nullable;
 import javax.jms.JMSException;
 import javax.jms.Message;
 import javax.jms.TextMessage;
+
+import com.nesscomputing.logging.Log;
 
 /**
  * Accepts incoming messages, checks whether they are text messages and forwards them to

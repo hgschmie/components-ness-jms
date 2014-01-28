@@ -35,9 +35,6 @@ import com.nesscomputing.config.Config;
 import com.nesscomputing.config.ConfigModule;
 import com.nesscomputing.jms.util.CountingMessageCallback;
 import com.nesscomputing.jms.util.DummyMessageCallback;
-import com.nesscomputing.testing.lessio.AllowDNSResolution;
-import com.nesscomputing.testing.lessio.AllowLocalFileAccess;
-import com.nesscomputing.testing.lessio.AllowNetworkListen;
 
 import org.apache.activemq.ActiveMQConnectionFactory;
 import org.apache.activemq.broker.BrokerFactory;
@@ -48,10 +45,13 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.kitei.testing.lessio.AllowDNSResolution;
+import org.kitei.testing.lessio.AllowTmpDirAccess;
+import org.kitei.testing.lessio.AllowNetworkListen;
 
 @AllowDNSResolution
 @AllowNetworkListen(ports={0})
-@AllowLocalFileAccess(paths={"%TMP_DIR%"})
+@AllowTmpDirAccess
 public class TestQueueFactory
 {
     @Inject

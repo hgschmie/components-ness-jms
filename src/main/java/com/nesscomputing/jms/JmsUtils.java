@@ -15,8 +15,6 @@
  */
 package com.nesscomputing.jms;
 
-import com.nesscomputing.logging.Log;
-
 import java.io.InterruptedIOException;
 
 import javax.jms.Connection;
@@ -24,6 +22,8 @@ import javax.jms.JMSException;
 import javax.jms.MessageConsumer;
 import javax.jms.MessageProducer;
 import javax.jms.Session;
+
+import com.nesscomputing.logging.Log;
 
 /**
  * Helper methods to deal with JMS stuff.
